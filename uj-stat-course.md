@@ -137,9 +137,12 @@ Przedstawić ekspresję genów w róznych tkankach (http://biogps.org/downloads/
 
 Zadanie należy udostępnić poprzez dowolny publiczny system kontroli wersji. Polecam github lub bitbucket. Init należy wykonać
 
-# Tydzien 10 - wizualizacja danych
+# Tydzien 10, 11 - wizualizacja danych
 
 ### Zadanie w grupach
 
 ### Zadanie 10.1
 W katalogu z danymi, znajduje sie podkatalog z danymi z metagenomiki. Dane pochodzą z sekwencjonowania próbek środowiskowych z różnych elementów uniwersyteckich toalet. W katalogu znajdują się trzy pliki - z opisem taksonów, z opisem probek oraz iloscią odczytow przypadającą na dany takson w danej probce. Nalezy przygotowac wizualizację dowolnego fragmentu danych i przedstawic wnioski z wykresu.
+### Zadanie 10.2
+Zwizualizować zmiany w strukturze kolejności urodzeń. X - lata, Y - procent, Grubość - liczba bezwzględna, Kolor - 
+http://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5468/16/1/1/tablica_6.xls
