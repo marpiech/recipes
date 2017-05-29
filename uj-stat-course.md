@@ -146,3 +146,8 @@ W katalogu z danymi, znajduje sie podkatalog z danymi z metagenomiki. Dane pocho
 ### Zadanie 10.2
 Zwizualizować zmiany w strukturze kolejności urodzeń. X - lata, Y - procent, Grubość - liczba bezwzględna, Kolor - 
 http://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5468/16/1/1/tablica_6.xls
+
+# Tydzień 12 - redukcja wymiarów, klasyfikacja
+
+### Zadanie 12.1
+Należy poklasyfikować komórki według i wzorca ekspresji. Zbiór danych dotyczy >1600 komórek nerwowych i ich trankryptomów. Opis próbek (komórek) znajduje się w katalogu biostat-data/single-cell. Dane znajdują się pod adresem https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585. Należy skorzystać z pliku GSE71585_RefSeq_RPKM.csv.gz. Publikacja znajduje się pod adresem https://www.ncbi.nlm.nih.gov/pubmed/26727548. W pierwszym kroku należy zredukować ilość wymiarów (ktorych początkowo jest tyle ile jest genów) przy pomocy analizy komponentów głównych. W kolejnym kroku odlożyć komórki według opisu na pierwszych dwóch osiach PCA. Można wybrać klastry komórek i dalej je różnicować. Ostatecznie powinno powstać 20-60 populacji komórek. Należy je nazwać i zwizualizować oraz poklastrować. Można używać także hierarchicznej klasteryzacji lub k-means.
