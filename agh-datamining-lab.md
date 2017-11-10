@@ -12,39 +12,49 @@ Należy skorzystać z pliku GSE71585_RefSeq_RPKM.csv.gz.
 Publikacja znajduje się pod adresem https://www.ncbi.nlm.nih.gov/pubmed/26727548.
 
 ## 1
-`otworzyć rstudio`
+```
+otworzyć rstudio
+```
 
 # 2
 `pobrać plik`
 
 # 3
 `podejrzeć plik`
-Można wykorzystać cat, head, cut, gzip -d, gunzip
+
+Można wykorzystać `cat`, `head`, `cut`, `gzip -d`, `gunzip`
 
 # 4
 `wczytać plik`
-R funkcja read.csv
+
+R. Funkcja `read.csv`
 
 # 5
 `policzyć średnią z każdego wiersza`
-Wykorzystać apply zamiast for. W domu przeczytać dlaczego w R korzystamy z apply.
+
+Wykorzystać `apply` zamiast `for`. W domu przeczytać dlaczego w R korzystamy z `apply`.
 
 # 6
 `policzyć decyle, średnią, medianę, kwartyle z każdego wiersza`
-Można wykorzystać funckje summary dla wektorów liczbowych oraz quantile
+
+Można wykorzystać funckję `summary` dla wektorów liczbowych oraz funckję `quantile`
 
 # 7
 `obejrzec rozkłady średnich, median, różnic między kwartylami`
-Wykorzystać funckję hist. Rozkłady skośne można oglądać wykorzystując transformację log(1 + x)
+
+Wykorzystać funckję `hist`. Rozkłady skośne można oglądać wykorzystując transformację `log2(1 + x)`
 
 # 8
 `wykonać redukcję wymiarów przy pomocy PCA dla pierwszych 300 genów`
-wykorzystać funkcję prcomp
+
+Wykorzystać funkcję `prcomp`
 
 # 9
 `przedstawić na wykresie typu scatterplot rozłożenie próbek na dwóch pierwszych osiach PCA1 i PCA2`
-funckja plot
+
+Funckja `plot`
 
 # 10
 `przefiltrować features na podstawie rozkładu i powtórzyć kroki 8 i 9 aż do uzyskania rozdzielonych "chmurek"`
-można wykorzystać funcję which
+
+Można wykorzystać funcję `which`
