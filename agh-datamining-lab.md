@@ -82,4 +82,77 @@ przefiltrować features na podstawie rozkładu i powtórzyć kroki 8 i 9 aż do 
 Można wykorzystać funcję `which`
 
 ## Lab2
-Tadam
+Kod do Lab 1
+```
+url <- "http://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE71585&format=file&file=GSE71585%5FRefSeq%5FRPKM%2Ecsv%2Egz"
+file <- "rpkm.csv.gz"
+download.file(url,file)
+data <- read.csv(
+  gzfile(file),
+  sep=",",
+  header=TRUE,
+  stringsAsFactors=FALSE,
+  row.names=1)
+
+colnames(data) <- 1:ncol(data)
+which.columns <- 1:ncol(data)
+
+selected.data <- data[,which.columns]
+selected.desc <- data.frame(t(apply(selected.data, 1, summary)),
+                   t(apply(selected.data, 1, quantile, prob = seq(0, 1, length = 11))))
+which.rows <- which(selected.desc$Min < 0.5 & selected.desc$Max < 500 & selected.desc$X20. < 1 & selected.desc$X80. > 30)
+pca <- prcomp(t(selected.data[which.rows,]))
+plot(pca$x[,"PC1"], pca$x[,"PC2"])
+```
+### 1
+```
+Utworzyć macierz odległości euklidesowych pomiędzy "komórkami" w przestrzeni rozpiętej na osiach PCA1 i PCA2
+```
+Wykorzystać funkcję `dist`
+
+### 2
+```
+Wykonać hierarchiczną klasteryzację na utworzonej macierzy odległości. Wykorzystać metodę składania 'average'
+```
+Funckja `hclust`
+
+### 3
+```
+Wykonać dendrogram 
+```
+Funckja `as.dendrogram`
+
+### 4
+```
+Narysować dendrogram
+```
+
+### 5
+```
+Przedstawić macierz odległości za pomocą mapy cieplnej. Do mapy cieplnej wykorzystać utworzony dendrogram.
+```
+Funckja `heatmap`
+
+### 6
+```
+Wykonać kroki 2 do 5 (bez 4) na innych metodach składania. Wnioski?
+```
+
+### 7
+```
+Podzielić drzewo na dwie gałęzie odchodzące od korzenia.
+```
+Funkcja `cutree`
+
+### 8
+```
+Na wszystkich genach poszukać najlepszego markera rozdzielającego dwie gałęzie.
+```
+Czy istnieje pojedynczy marker rozdzielający elementy Z czułością i specyficznością większą od 98%. Czy istnieje marker mniej licznej gałęzi? Czy istnieje marker bardziej licznej gałęzi?
+
+### 9
+```
+Usunąć komórki źle sklasyfikowane przez marker - można przypisać im klasę "0". Pozostałym przypisać klasy "1" i "2". Można także nazwać je od markera.
+```
+
+### 10
