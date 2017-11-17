@@ -150,6 +150,12 @@ Na wszystkich genach poszukać najlepszego markera rozdzielającego dwie gałęz
 ```
 Czy istnieje pojedynczy marker rozdzielający elementy z czułością i specyficznością większą od 98%. Jaka jest nazwa tego genu? Czy istnieje marker mniej licznej gałęzi? Czy istnieje marker bardziej licznej gałęzi?
 
+### 8.1
+```
+Narysować krzywą ROC dla predyktora
+```
+pakiet `pROC`. Funkcja `roc`
+
 ### 9
 ```
 Usunąć komórki źle sklasyfikowane przez marker - można przypisać im klasę "0". Pozostałym przypisać klasy "1" i "2". Można także nazwać je od markera.
