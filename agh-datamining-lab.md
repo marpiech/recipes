@@ -148,7 +148,7 @@ Funkcja `cutree`
 ```
 Na wszystkich genach poszukać najlepszego markera rozdzielającego dwie gałęzie.
 ```
-Czy istnieje pojedynczy marker rozdzielający elementy Z czułością i specyficznością większą od 98%. Czy istnieje marker mniej licznej gałęzi? Czy istnieje marker bardziej licznej gałęzi?
+Czy istnieje pojedynczy marker rozdzielający elementy z czułością i specyficznością większą od 98%. Jaka jest nazwa tego genu? Czy istnieje marker mniej licznej gałęzi? Czy istnieje marker bardziej licznej gałęzi?
 
 ### 9
 ```
