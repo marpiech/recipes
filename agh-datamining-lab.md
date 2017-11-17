@@ -156,3 +156,7 @@ Usunąć komórki źle sklasyfikowane przez marker - można przypisać im klasę
 ```
 
 ### 10
+```
+Na wydzielonych klasach powtórzyć iteracyjnie procedurę, aż do momentu, w którym nie da się znaleźc markera dla żadnej z gałęzi.
+```
+Opisać komórki klasami
