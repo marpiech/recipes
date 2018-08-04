@@ -39,7 +39,7 @@ for sample in fastq/*.fq.gz
         fastqc $sample -o fastqc
     done
 ```
-# Składnie odczytów w transkryptom referencyjny
+# Składanie odczytów w transkryptom referencyjny
 Narzędzie Trinity umożliwia sprawne złożenie odczytów w sekwencje referencyjne.
 Tworzymy katalog, w którym znajdą się wyniki analizy.
 ``` sh 
@@ -52,7 +52,7 @@ Trinity --seqType fq --samples_file fastq/sample-info.txt --SS_lib_type FR --out
 Gdzie:
 * --seqType - oznacza format pliku, w którym przechowywane są odczyty (fa - fasta lub fq - fastq)
 * --samples_file - plik zawierający spis wszyskich plików fastq
-* --SS_lib_type - 
+* --ss_lib_type - rodzaj biblioteki (sparowana, niesparowana)
 * --output - folder, w którym znajdą się wyniki analizy
 * --max_memory - maksymalna ilość RAMu przeznaczona dla tego uruchomienia programu
 
