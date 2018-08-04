@@ -136,7 +136,7 @@ bowtie2-build Trinity.fasta Trinity
 ```
 Przejdźmy do głównego katalogu, w którym znajdują się wyniki analiz i utwórzmy folder, w którym umieścimy uliniowione pliki.
 ``` sh
-cd ../trinity/
+cd ..
 mkdir bowtie2
 ```
 Polecenie do mapowania odczytów wygląda następująco:
